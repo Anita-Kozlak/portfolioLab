@@ -1,0 +1,19 @@
+.header__user {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    button {
+        padding: 10px;
+        font-family: $font-base;
+        background-color: white;
+        margin-left: 20px;
+        border: none;
+        color: $grey;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover {
+            border: 1px solid $yellow;
+        }
+     }
+}

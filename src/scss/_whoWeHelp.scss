@@ -1,0 +1,31 @@
+.whoWeHelp {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: $grey-dark;
+    h1 {
+        font-size: 38px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 100px;
+        display: flex;
+        justify-content: space-between;
+     
+
+        button {
+            font-size: 24px;
+            padding: 30px;
+            background-color: white;
+            border: none;
+            color: $grey-dark;
+
+            &:hover {
+            border: 1px solid $grey-dark;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.threeColumns {
+    background-color: rgb(250,206,18);
+    .home__columns {
+        max-width: 1200px;
+        margin: auto;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        
+        .home__column {
+            width: 330px;
+            text-align: center;
+            h1 {
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                text-transform: uppercase;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-family: $font-alt;
+                font-size: 16px;
+                font-weight: lighter;
+
+            }
+            
+        }
+    }
+}

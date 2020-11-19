@@ -1,0 +1,26 @@
+.aboutUs {
+    display: flex;
+
+    &__left {
+        text-align: center;
+        background-color: $bg;
+        h1 {
+            font-size: 38px;
+            margin-top: 180px;
+        }
+        p {
+            font-size: 25px;
+            margin: 30px 120px 50px;
+            line-height: 40px;
+        }
+       .aboutUs__sign {
+           float: right;
+           margin-right: 120px;
+       }
+    }
+    &__right {
+        width: 900px;
+        height: 940px;
+      
+    }
+}
