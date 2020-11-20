@@ -4,7 +4,7 @@ const AboutUs = () => {
     return (
         <div className="aboutUs" id="aboutus">
             <div className="aboutUs__left">
-                <h1>About us</h1>
+                <h1>O nas</h1>
                 <img src="Decoration.png" alt="decorationImage"></img>
                 <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                 <img className="aboutUs__sign" src="Signature.png" alt="signatureImage"></img>

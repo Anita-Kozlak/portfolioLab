@@ -1,7 +1,8 @@
 .register {
-    margin-right: 70px;
     color: $grey-dark;
     margin-bottom: 200px;
+    margin-right: 135px;
+
 
     img {
         margin-bottom: 50px;
@@ -46,9 +47,14 @@
         button {
             font-size: 16px;
             background-color: white;
-            padding: 10px;
-            border: 1px solid $grey-dark;
-        }
+            padding: 16px;
+            border: none;
+            &:hover {
+                border: 1px solid $grey-dark;
+                padding: 15px;
 
+            }
+
+        }
     }
 }

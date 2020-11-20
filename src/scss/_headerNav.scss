@@ -8,15 +8,18 @@
         margin-top: 70px;
         margin-bottom: 40px;
         button {
-            padding: 10px;
+            padding: 11px;
             font-family: $font-base;
             background-color: white;
             margin-left: 20px;
             border: none;
             color: $grey;
             font-size: 14px;
+            
             &:hover {
                 border: 1px solid $yellow;
+                padding: 10px;
+
             }
          }
        }
@@ -24,11 +27,14 @@
        &__nav {
         margin-bottom: 100px;
         button {
-            margin-left: 30px;
+            margin-left: 15px;
             font-size: 18px;
             text-decoration: none;
             border: none;
             background-color: white;
+            padding: 11px;
+            color: $grey-dark;
+
             
         &:hover {
             border: 1px solid $grey-dark;

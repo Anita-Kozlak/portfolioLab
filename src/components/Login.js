@@ -1,9 +1,8 @@
-import HomeNavHeader from './HomeNavHeader'
 import React, { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import firebase from '../components/firebase'
 import { useForm } from "react-hook-form";
-
+import HomeLoggNavHeader from './HomeLoggNavHeader'
 
 
 const Login = (props) => {
@@ -16,7 +15,7 @@ const Login = (props) => {
     const onSubmit = values => console.log(values);
 
     const onLogin = async () => {
-        try {
+        try { await 
             firebase.auth().signInWithEmailAndPassword(email,password)
             props.history.push('/loggedhome')
          } catch (error) {
@@ -25,7 +24,7 @@ const Login = (props) => {
     }
     return (
       <div className="login">
-        <HomeNavHeader />
+        <HomeLoggNavHeader />
         <div className="form">
           <h1>Zaloguj się</h1>
           <img src="Decoration.png" alt="DecorationImage"></img>
@@ -67,14 +66,12 @@ const Login = (props) => {
                   )}
                 </div>
               )}
-
-             
             </div>
             <div className="login__buttons">
-              <button onClick={onLogin} type="submit">Zaloguj się</button>
-              <button type="submit">
-                Załóż konto
+              <button onClick={onLogin} type="submit">
+                Zaloguj się
               </button>
+              <button type="submit">Załóż konto</button>
             </div>
           </form>
         </div>

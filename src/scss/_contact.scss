@@ -3,14 +3,20 @@
     display: flex;
     justify-content: space-between;
     max-width: 100vw;
+    color: $grey-dark;
   
     &__left {
         img {
-            width: 1000px;
+            width: 100%;
             height: 600px;
+            opacity: 0.5;
+            position: relative;
+
         }
     }
     &__right {
+        position: absolute;
+        left: 900px;
         margin-right: 600px;
         span {
             color: red;
@@ -24,35 +30,63 @@
             padding: 10px 30px;
             background-color: white;
             margin-top: 20px;
+            padding: 13px 50px;
             border: 1px solid $grey-dark;
+            font-size: 15px;
         }
         img {
             margin-top: 30px;
             margin-left: 140px;
             margin-bottom: 50px;
         }
-    
+       
         h1 {
             font-size: 38px;
             text-align: center;
         }
         .contact__form {
             margin-left: 40px;
-         
+             p {
+                color: #2E9E23;
+                font-weight: bold;
+                width: 280px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 20px;
+             }
+             label {
+                 font-weight: 700;
+             }
             textarea {
                 margin-top: 30px;
                 border-top: none;
                 border-right: none;
                 border-left: none;
                 width: 480px;
+                border-bottom: 1px solid $grey-dark;
+                font-family: $font-base;
+                background-color: transparent;
+
+                &::placeholder {
+                    font-size: 15px;
+                    font-family: $font-base;
+                    line-height: 20px;
+                    color: #3C3C3C26;
+                 }
             }
             .contact__inputs {
                  display: flex;
                  margin-bottom: 30px;
                  .contact__input {
                     margin-right: 30px;
-                    
-                 }
+                    Input {
+                        &::placeholder {
+                            font-size: 15px;
+                            font-family: $font-base;
+                            color: #3C3C3C26;
+                         }
+                    }
+                }
             }
         }
     }
@@ -64,8 +98,12 @@
     margin-bottom: 50px;
     p {
         margin: auto;
+        font-weight: 400;
     }
     div {
-        margin-right: 50px;
+        margin-right: 150px;
+    }
+    img {
+        margin-left: 20px;
     }
  }

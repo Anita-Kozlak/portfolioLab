@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import { sameAs } from '../helpers/validators';
-import HomeNavHeader from './HomeNavHeader';
+import HomeLoggNavHeader from './HomeLoggNavHeader';
 import firebase from '../components/firebase';
 
 
@@ -34,7 +34,7 @@ const Register = (props) => {
 
     return (
         <div className="register">
-             <HomeNavHeader />
+             <HomeLoggNavHeader />
              <div className="form">
                 <h1>Załóż konto</h1>
                 <img src="Decoration.png" alt="DecorationImage"></img>

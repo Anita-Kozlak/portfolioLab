@@ -1,5 +1,6 @@
 .aboutUs {
     display: flex;
+    color: $grey-dark;
 
     &__left {
         text-align: center;
@@ -7,6 +8,7 @@
         h1 {
             font-size: 38px;
             margin-top: 180px;
+            margin-bottom: 30px;
         }
         p {
             font-size: 25px;
@@ -20,7 +22,9 @@
     }
     &__right {
         width: 900px;
-        height: 940px;
+        img {
+        height: 880px;
+        }
       
     }
 }

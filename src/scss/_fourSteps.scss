@@ -1,9 +1,11 @@
 .fourSteps__heading {
     text-align: center;
     h1 {
-        font-size: 30px;
-        margin-top: 40px;
+        font-size: 38px;
+        margin-top: 50px;
         margin-bottom: 20px;
+        color: $grey-dark;
+
     }
 }
 .fourSteps {
@@ -39,12 +41,12 @@
     
     }
     &__button {
-         padding: 10px;
         width: 200px;
         margin: auto;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 70px;
         button {
+            padding: 15px 70px;
             background-color: white;
             color: $grey-dark;
             text-align: center;
