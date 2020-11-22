@@ -22,7 +22,7 @@ const LoggedHome = (props) => {
           <div className="header" id="start">
             <div className="header__user">
               <h2>Cześć {firebase.auth().currentUser.email}!</h2>
-              <button>Oddaj rzeczy</button>
+              <Link to="./givethings"><button>Oddaj rzeczy</button></Link>
               <button onClick={onSignout}>Wyloguj</button>
             </div>
             <div className="header__nav">
@@ -48,10 +48,10 @@ const LoggedHome = (props) => {
           </span>
           <img src="Decoration.png" alt="decorationImage"></img>
           <div className="menu__buttons">
-            <Link to="/login">
+            <Link to="/givethings">
               <button>Oddaj rzeczy</button>
             </Link>
-            <Link to="/login">
+            <Link to="/givethings">
               <button>Zorganizuj zbiórkę</button>
             </Link>
           </div>

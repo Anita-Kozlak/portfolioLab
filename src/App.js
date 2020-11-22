@@ -17,6 +17,8 @@ import LoggedHome from './components/LoggedHome'
 import { AuthProvider } from './components/auth'
 import PrivateRoute from './components/PrivateRoute'
 import LoggOut from './components/LoggOut';
+import GiveThings from './components/GiveThings'
+import FormStepTwo from './components/FormStepTwo'
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route exact path="/organizations" component={Organizations} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/loggout" component={LoggOut} />
+          <Route exact path="/givethings" component={GiveThings} />
+          <Route exact path="/formsteptwo" component={FormStepTwo} />
 
 
           <PrivateRoute exact path='/loggedhome' component={LoggedHome} />

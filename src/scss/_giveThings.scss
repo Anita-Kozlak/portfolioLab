@@ -1,0 +1,39 @@
+.giveThings__steps {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .giveThings__step {
+    border: 1px solid $grey-dark;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    transform: rotate(45deg);
+
+    position: relative;
+        span {
+            transform: rotate(-45deg);
+             position: absolute;
+             font-size: 20px;
+             top: 30px;
+             bottom: -50px;;
+             text-align: center;
+            }
+             .step__number {
+            top: 0;
+            right: 70px;
+            bottom: 5px;
+            font-size: 25px;
+            }
+
+
+      
+    }
+}
+.giveThings__text {
+    font-size: 30px;
+    color: $grey-dark;
+
+}
+.btn {
+    @include button;
+}

@@ -1,6 +1,7 @@
 @import './reset';
 @import './fonts';
 @import './colors';
+@import './mixins';
 @import './headerNav';
 @import './headerMenu';
 @import './login';
@@ -15,6 +16,17 @@
 @import './contact';
 @import './loggedhome';
 @import './loggout';
+@import './giveThings';
+@import './important';
+@import './formStepOne';
+@import './formStepTwo';
+@import './formStepThree';
+@import './formStepFour';
+@import './formSummary';
+@import './formThankYou';
+
+
+
 
 body {
     font-family: $font-base;

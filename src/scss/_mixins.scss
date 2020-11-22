@@ -1,0 +1,7 @@
+@mixin button  {
+        padding: 20px 40px;
+        font-size: 15px;
+        margin-right: 50px;
+        background-color: transparent;
+        border: 1px solid $grey-dark;
+}

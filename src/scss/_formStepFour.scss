@@ -1,0 +1,57 @@
+.formStepFour {
+    background-image: url('./Background-Form.png');
+    background-size: cover;
+    height: 800px;
+    padding: 50px 0 50px 100px;
+
+   
+    &__container {
+            .btn {
+            @include button;
+            margin-top: 100px;
+            }
+            h4 {
+                margin-bottom: 90px;
+                font-size: 20px;
+
+            }
+            h1 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                }
+            .formStepFour__options {
+                max-width: 800px;
+                margin-top: 50px;
+                display: flex;
+                h1 {
+                    font-size: 20px;
+                }
+                .formStepFour__column {
+                    margin-right: 100px;
+                }
+              
+                .formStepFour__option {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                h3 {
+                    font-size: 20px;
+                    width: 100px;
+                    margin-right: 20px;
+                    }
+                input {
+                    width: 230px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid $grey-dark;
+                    }
+                textarea {
+                    width: 230px;
+                    background-color: transparent;
+                    border: 1px solid $grey-dark;
+                    }
+                }
+            } 
+        }
+    }
