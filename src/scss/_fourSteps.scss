@@ -13,14 +13,14 @@
    
 
     &__container {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
         text-align: center;
         color: $grey-dark;
     }
      &__columns {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 30px;
         padding-top: 70px;
         padding-bottom: 70px;
