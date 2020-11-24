@@ -1,16 +1,19 @@
 .formThankYou {
-    background-image: url('./Background-Form.png');
-    background-size: cover;
-    height: 800px;
     &__container {
         max-width: 550px;
         margin: auto;
         text-align: center;
         font-size: 30px;
         line-height: 35px;
-        padding-top: 300px;
+        // padding-top: 300px;
+        // padding-bottom: 300px;
         p {
+            padding-top: 200px;
             margin-bottom: 20px;
+        }
+        img {
+            padding-bottom: 200px;
+
         }
     }
 }

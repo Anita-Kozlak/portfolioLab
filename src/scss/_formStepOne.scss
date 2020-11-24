@@ -1,52 +1,55 @@
 .formStepOne {
-    background-image: url('./Background-Form.png');
-    background-size: cover;
-    height: 800px;
-    &__container {
-        padding: 50px 0 50px 100px;
-        button {
-            padding: 20px 40px;
-            font-size: 15px;
-            margin-top: 50px;
-            background-color: transparent;
-            border: 1px solid $grey-dark;
+   
+    .btn {
+            @include button;
+            @include desktop {
+                margin-top: 100px;
+                // margin-left: 100px;
+
+            }
+
         }
-        h4 {
+    &__form {
+        padding-top: 50px;
+         h4 {
             margin-bottom: 90px;
             font-size: 20px;
         }
         p {
             font-size: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             font-weight: 700;
 
         }
     }
+
     
     &__checkbox {
         display: flex;
         align-content: center;
+        
 
         p {
             font-size: 20px;
             font-weight: normal;
             margin-top: 7px;
-            margin-left: 20px;
+            // margin-left: 20px;
         }
     }
 }
-        input[type=checkbox] {
-            height: 30px;
-            width: 30px;
-            border: 1px solid $grey-dark;
-            -webkit-appearance: none;
+input[type=radio] {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $grey-dark;
+    -webkit-appearance: none;
 
-        }
-        input[type=checkbox]:checked {
-            height: 30px;
-            width: 30px;
-            border: 1px solid $grey-dark;
-            -webkit-appearance: none;
-            background-color: #FAD648;
+    &:checked {
+        height: 30px;
+        width: 30px;
+        border: 1px solid $grey-dark;
+        -webkit-appearance: none;
+        background-color: #FAD648;
             
-        }
+    }
+}

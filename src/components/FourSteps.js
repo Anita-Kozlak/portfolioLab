@@ -23,7 +23,7 @@ const FourSteps = () => {
                             <h3>wykorzystaj z worków na śmieci</h3>
                         </div>
                         <div className="fourStep__column">
-                            <img src="Icon.png" alt="Icon"></img>
+                            <img src="Icon3.png" alt="Icon"></img>
                             <h2>Zdecyduj komu chcesz pomóc</h2>
                             <h3>wybierz zaufane miejsce</h3>
                         </div>

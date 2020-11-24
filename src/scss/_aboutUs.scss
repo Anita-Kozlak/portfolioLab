@@ -21,10 +21,12 @@
        }
     }
     &__right {
-        width: 900px;
-        img {
-        height: 880px;
-        }
-      
+        display: none;
+        width: 900px; 
+     
+         @include desktop {
+          display: flex;
+      }
     }
+       
 }

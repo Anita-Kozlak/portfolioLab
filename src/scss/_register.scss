@@ -1,15 +1,21 @@
 .register {
+    // margin-right: 100px;
+    // margin-left: 100px;
     color: $grey-dark;
     margin-bottom: 200px;
-    margin-right: 100px;
 
 
     img {
         margin-bottom: 50px;
+        width: 18vw;
+
 
         }
     .form {
         text-align: center;
+        max-width: 500px;
+        margin: auto;
+
 
         span {
             color: red;

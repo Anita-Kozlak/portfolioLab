@@ -119,7 +119,7 @@ const Contact = () => {
                     message: 'Wiadomosć musi mieć conajmniej 120 znaków!',
                   },
                 })}
-                rows={10}
+                rows={8}
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

@@ -1,24 +1,24 @@
 .threeColumns {
     background-image: url('./3Columns\ Background.png');
-    .home__columns {
-        max-width: 1200px;
-        margin: auto;
-        padding: 80px;
-        display: flex;
-        justify-content: space-between;
-        
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
         .home__column {
-            width: 330px;
+            width: 25%;
             text-align: center;
             h1 {
-                font-size: 80px;
+                font-size: 70px;
                 margin-bottom: 20px;
                 color: #5E5322;
                 font-weight: lighter;
+                
             }
             h2 {
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 16px;
                 margin-bottom: 20px;
                 margin-top: 15px;
                 font-weight: 400;
@@ -33,4 +33,3 @@
             
         }
     }
-}

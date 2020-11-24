@@ -7,12 +7,14 @@ import FourSteps from './FourSteps';
 import HomeThreeColumns from './HomeThreeColumns';
 import WhoWeHelp from './WhoWeHelp';
 import { HashLink as Link } from 'react-router-hash-link';
+import HomeLoggMenuHeader from './HomeLoggMenuHeader';
+import SignOut from './SignOut';
 
 const LoggedHome = (props) => {
-  const onSignout = async () => {
-    await firebase.auth().signOut();
-    props.history.push('/loggout');
-  };
+  // const onSignout = async () => {
+  //   await firebase.auth().signOut();
+  //   props.history.push('/loggout');
+  // };
 
   return (
     <>
@@ -20,11 +22,7 @@ const LoggedHome = (props) => {
         <img className="heroImage" src="HeroImage.png" alt="heroImage"></img>
         <div className="header__menu-right">
           <div className="header" id="start">
-            <div className="header__user">
-              <h2>Cześć {firebase.auth().currentUser.email}!</h2>
-              <Link to="./givethings"><button>Oddaj rzeczy</button></Link>
-              <button onClick={onSignout}>Wyloguj</button>
-            </div>
+            <SignOut />
             <div className="header__nav">
               <button>Start</button>
               <Link smooth to="#foursteps">

@@ -1,115 +1,161 @@
 import React, { useState } from 'react';
-import FormStepThree from './FormStepThree';
-import FormStepSummary from './FormSummary'
-import Important from './Important';
-import { useForm } from 'react-hook-form';
 
-const FormStepFour = () => {
-  const [stepThree, setStepThree] = useState(false);
-  const [stepFour, setStepFour] = useState(true);
-  const [stepSummary, setStepSummary] = useState(false)
-  const [important, setImportant] = useState(true);
-  const [street, setStreet] = useState('')
+export default function FormStepFour({ props }) {
+  const [errors, setErrors] = useState({
+    street: '',
+    city: '',
+    code: '',
+    phone: '',
+    date: '',
+    hour: '',
+  });
 
-  const { register, handleSubmit, errors } = useForm();
+  const { counter, handleChange, formData, Minus, Plus } = props;
 
-
-   const stepBack = () => {
-     setStepThree(true);
-     setStepFour(false);
-     setImportant(false)
-     
-    };
-   const stepNext = () => {
-     setStepThree(false);
-     setStepFour(false);
-     setStepSummary(true)
-     setImportant(false)
-   };
-    const onSubmit = async (data) => 
-      console.log(data);
-
+  const four = () => {
+    let street = '';
+    let city = '';
+    let code = '';
+    let phone = '';
+    let date = '';
+    let hour = '';
+    if (formData.street.length < 2) {
+      street = 'Minimum 2 znaki!';
+    }
+    if (formData.city < 2) {
+      city = 'Minimum 2 znaki!';
+    }
+    if (formData.code.length !== 5) {
+      code = 'Kod musi składać się z 5 cyfr!!';
+    }
+    if (formData.phone.length !== 9) {
+      phone = 'Numer musi składać się z 9 cyfr!';
+    }
+    if (!formData.date || !formData.hour) {
+      date = 'Proszę uzupełnić to pole';
+    }
+    if (street || city || code || phone || date || hour) {
+      setErrors({
+        ...errors,
+        street: street,
+        city: city,
+        code: code,
+        phone: phone,
+        date: date,
+        hour: date,
+      });
+      return;
+    }
+    Plus();
+  };
 
   return (
     <>
-      {important && <Important />}
-
-      {stepThree && <FormStepThree />}
-      {stepFour && (
-        <div className="formStepFour">
-          <form
-            className="formStepFour__container"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <h4>Krok 4/4</h4>
-            <h1>Podaj adres oraz termin odbioru rzeczy przez kuriera</h1>
-
-            <div className="formStepFour__options">
-              <div className="formStepFour__column">
-                <h1>Adres odbioru:</h1>
-                <div className="formStepFour__option">
-                  <h3>Ulica</h3>
-                  <input ref={register({
-                      required: 'Pole jest wymagane!',
-
-                      maxLength: {
-                        value: 2,
-                        message: 'Podane ulica jest nieprawidłowa! ',
-                      },
-                    })}
-                    placeholder=""
-                    name="street"
-                    value={street}
-                    onChange={(e) => setStreet(e.target.value)}
-                  />
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Miasto</h3>
-                  <input></input>
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Kod pocztowy</h3>
-                  <input></input>
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Numer telefonu</h3>
-                  <input></input>
-                </div>
-              </div>
-              <div className="formStepFour__column">
-                <h1>Termin odbioru:</h1>
-                <div className="formStepFour__option">
-                  <h3>Data</h3>
-                  <input></input>
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Godzina</h3>
-                  <input></input>
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Kod pocztowy</h3>
-                  <input></input>
-                </div>
-                <div className="formStepFour__option">
-                  <h3>Uwagi dla kuriera</h3>
-                  <textarea rows={10} type="text"></textarea>
-                </div>
-              </div>
+      <div className="formStepFour">
+        <form onSubmit={e => e.preventDefault()} className="formStepFour__form">
+          <h4>Krok {counter} /4</h4>
+          <h1>Podaj adres oraz termin odbioru rzeczy przez kuriera</h1>
+          <div className="formStepFour__options">
+            <div className="formStepFour__column">
+              <h2>Adres odbioru:</h2>
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Ulica</h3>{' '}
+                <input
+                  onChange={handleChange}
+                  value={formData.street}
+                  name="street"
+                  type="text"
+                />{' '}
+              </label>
+              {errors.street && <p className="error">{errors.street}</p>}
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Miasto</h3>
+                <input
+                  onChange={handleChange}
+                  value={formData.city}
+                  name="city"
+                  type="text"
+                />{' '}
+              </label>
+              {errors.city && (
+                <p p className="error">
+                  {errors.city}
+                </p>
+              )}
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Kod pocztowy</h3>
+                <input
+                  onChange={handleChange}
+                  value={formData.code}
+                  name="code"
+                  type="text"
+                />{' '}
+              </label>
+              {errors.code && <p className="error">{errors.code}</p>}
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Numer telefonu</h3>{' '}
+                <input
+                  onChange={handleChange}
+                  value={formData.phone}
+                  name="phone"
+                  type="tel"
+                />{' '}
+              </label>
+              {errors.phone && <p className="error">{errors.phone}</p>}
             </div>
+            <div className="formStepFour__column">
+              <h2>Termin odbioru:</h2>
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Data</h3>{' '}
+                <input
+                  onChange={handleChange}
+                  value={formData.date}
+                  name="date"
+                  type="date"
+                />{' '}
+              </label>
+              {errors.date && <p className="error">{errors.date}</p>}
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Godzina</h3>{' '}
+                <input
+                  onChange={handleChange}
+                  value={formData.hour}
+                  name="hour"
+                  type="time"
+                />{' '}
+              </label>
+              {errors.date && <p className="error">{errors.date}</p>}
+              <label className="formStepFour__option">
+                {' '}
+                <h3>Uwagi dla kuriera</h3>{' '}
+                <textarea
+                  onChange={handleChange}
+                  value={formData.desc}
+                  name="desc"
+                />{' '}
+              </label>
+            </div>
+          </div>
+          {counter > 5 ? null : (
             <div>
-              <button onClick={stepBack} className="btn">
-                Wstecz
-              </button>
-              <button onClick={stepNext} className="btn">
-                Dalej
+              {counter === 1 ? null : (
+                <button className="btn" onClick={Minus}>
+                  Wstecz
+                </button>
+              )}
+              <button className="btn" onClick={four}>
+                {counter === 5 ? 'Potwierdź' : 'Dalej'}
               </button>
             </div>
-          </form>
-        </div>
-      )}
-      {stepSummary && <FormStepSummary />}
+          )}
+        </form>
+      </div>
     </>
   );
-};
-
-export default FormStepFour;
+}

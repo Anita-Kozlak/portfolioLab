@@ -1,9 +1,15 @@
 .contact {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
-    max-width: 100vw;
+    justify-content: center;
+
+
+    width: 100vw;
     color: $grey-dark;
+    // @include desktop {
+    // justify-content: space-between;
+
+    // }
   
     &__left {
         img {
@@ -11,13 +17,25 @@
             height: 600px;
             opacity: 0.5;
             position: relative;
-
+            display: none;
+            @include desktop {
+                display: flex;
+            }
         }
     }
     &__right {
+  
+
+
+        // margin-right: 600px;
+        max-width: 1000px;
+        text-align: center;
+        margin: auto;
+        @include desktop {
         position: absolute;
         left: 900px;
-        margin-right: 600px;
+        }
+
         span {
             color: red;
             margin-top: 10px;
@@ -26,17 +44,24 @@
         
         
         .contact__send {
-            float: right;
+            // float: right;
             padding: 10px 30px;
             background-color: white;
             margin-top: 20px;
             padding: 13px 50px;
             border: 1px solid $grey-dark;
             font-size: 15px;
+            background-color: transparent;
+            @include desktop {
+                float: right;
+                margin-right: 70px;
+            }
         }
         img {
             margin-top: 30px;
-            margin-left: 140px;
+
+
+            // margin-left: 250px;
             margin-bottom: 50px;
         }
        
@@ -78,7 +103,7 @@
                  display: flex;
                  margin-bottom: 30px;
                  .contact__input {
-                    margin-right: 30px;
+                    margin-right: 40px;
                     Input {
                         &::placeholder {
                             font-size: 15px;
@@ -93,7 +118,10 @@
 }
 .contact__footer {
     display: flex;
-    justify-content: space-between;
+
+    // max-width: 1000px;
+
+    // justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
     p {
@@ -101,7 +129,8 @@
         font-weight: 400;
     }
     div {
-        margin-right: 150px;
+        display: flex;
+        margin-right: 70px;
     }
     img {
         margin-left: 20px;

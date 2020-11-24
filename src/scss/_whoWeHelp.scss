@@ -11,17 +11,19 @@
     &__buttons {
         margin-top: 80px;
         margin-bottom: 80px;
-        margin-left: 100px;
-        display: flex;
-        justify-content: space-between;
+        // margin-left: 100px;
+        // display: flex;
+        // justify-content: space-between;
      
 
         button {
             font-size: 24px;
+          
             padding: 31px;
             background-color: white;
             border: none;
             color: $grey-dark;
+            margin-right: 20px;
 
             &:hover {
             padding: 30px;

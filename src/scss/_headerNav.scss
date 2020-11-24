@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: flex-end;
     color: $grey;
+    padding-right: 50px;
+  
     
     &__buttons {
         margin-top: 70px;
@@ -26,8 +28,9 @@
    
        &__nav {
         margin-bottom: 100px;
+        margin-left: 50px;
         button {
-            margin-left: 15px;
+            margin-left: 5px;
             font-size: 18px;
             text-decoration: none;
             border: none;

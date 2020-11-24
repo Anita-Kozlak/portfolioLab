@@ -13,20 +13,29 @@ const HomeNavHeader = () => {
           </Link>
         </div>
         <div className="header__nav">
-            <Link to="/">
-              <button>Start</button>
-            </Link>
-          <Link smooth to="#foursteps">
-            <button>O co chodzi?</button>
+          <Link to="/">
+            <button>Start</button>
           </Link>
+          <Link smooth to="#foursteps">
+            <Link to="/">
+              <button>O co chodzi?</button>
+            </Link>
+          </Link>
+
           <Link smooth to="#aboutus">
-            <button>O nas</button>
+            <Link to="/">
+              <button>O nas</button>
+            </Link>
           </Link>
           <Link smooth to="#whowehelp">
-            <button>Fundacja i organizacje</button>
+            <Link to="/">
+              <button>Fundacja i organizacje</button>
+            </Link>
           </Link>
           <Link smooth to="#contact">
-            <button>Kontakt</button>
+            <Link to="/">
+              <button>Kontakt</button>
+            </Link>
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import { sameAs } from '../helpers/validators';
-import HomeLoggNavHeader from './HomeLoggNavHeader';
+import HomeNavHeader from './HomeNavHeader';
 import firebase from '../components/firebase';
 
 
@@ -34,11 +34,10 @@ const Register = (props) => {
 
     return (
         <div className="register">
-             <HomeLoggNavHeader />
+             <HomeNavHeader />
              <div className="form">
                 <h1>Załóż konto</h1>
                 <img src="Decoration.png" alt="DecorationImage"></img>
-
                 <form className="form__register" onSubmit={handleSubmit(onSubmit)}>
                     <div className="form__registerGrey">
                         <label>Email</label>

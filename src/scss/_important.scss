@@ -1,8 +1,7 @@
 .important {
     background-color: #FAD648;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 100px;
+    padding: 50px 100px;
+
     h1 {
         font-size: 36px;
         margin-bottom: 10px;
@@ -11,5 +10,6 @@
     p {
         font-size: 18px;
         color: $grey-dark;
+        line-height: 23px;
     }
 }

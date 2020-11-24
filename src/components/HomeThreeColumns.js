@@ -3,7 +3,7 @@ import React from "react";
 const HomeThreeColumns = () => {
     return (
         <div className="threeColumns">
-            <div className="home__columns">
+            {/* <div className="home__columns"> */}
                 <div className="home__column">
                     <h1>10</h1>
                     <h2>Oddanych worków</h2>
@@ -21,7 +21,7 @@ const HomeThreeColumns = () => {
                 </div>
                 
 
-            </div>
+            {/* </div> */}
         </div>
     )
 }
