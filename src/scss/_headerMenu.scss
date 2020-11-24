@@ -40,9 +40,7 @@
     }
 
     .menu__buttons {
-        display: flex;
         margin-top: 50px;
-        justify-content: space-around;
         margin-bottom: 50px;
         button {
             border: 1px solid $grey;
@@ -52,6 +50,8 @@
             font-size: 26px;
             color: $grey;
             background-color: white;
+            margin-right: 20px;
+            margin-left: 30px;
         
         }
     }

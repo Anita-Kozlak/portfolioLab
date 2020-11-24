@@ -1,6 +1,7 @@
 .aboutUs {
     display: flex;
     color: $grey-dark;
+    
 
     &__left {
         text-align: center;
@@ -22,7 +23,8 @@
     }
     &__right {
         display: none;
-        width: 900px; 
+        width: 100%;
+        overflow: hidden;
      
          @include desktop {
           display: flex;
