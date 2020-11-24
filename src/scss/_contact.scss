@@ -24,7 +24,7 @@
 
         @include desktop {
         position: absolute;
-        right: 10vw;
+        right: 5vw;
         }
 
         span {
@@ -44,7 +44,6 @@
             background-color: transparent;
             @include desktop {
                 float: right;
-                margin-right: 30px;
             }
         }
         img {
@@ -73,7 +72,7 @@
                 border-top: none;
                 border-right: none;
                 border-left: none;
-                width: 400px;
+                width: 460px;
                 border-bottom: 1px solid $grey-dark;
                 font-family: $font-base;
                 background-color: transparent;
