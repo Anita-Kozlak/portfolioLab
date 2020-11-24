@@ -13,7 +13,7 @@
         }
         p {
             font-size: 25px;
-            margin: 30px 120px 50px;
+            margin: 30px 80px 50px;
             line-height: 40px;
         }
        .aboutUs__sign {
@@ -23,7 +23,7 @@
     }
     &__right {
         display: none;
-        width: 100%;
+        width: 137%;
         overflow: hidden;
      
          @include desktop {
