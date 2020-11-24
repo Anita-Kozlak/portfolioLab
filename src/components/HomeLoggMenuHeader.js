@@ -1,27 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import firebase from '../components/firebase';
 import HomeLoggNavHeader from './HomeLoggNavHeader';
-import SignOut from './SignOut';
 
 
-const HomeLoggMenuHeader = (props) => {
-//  const onSignout = async () => {
-//    await firebase.auth().signOut();
-//    props.history.push('/loggout');
-//  };
-    
+const HomeLoggMenuHeader = () => {
+
     return (
       <>
         <div className="header__menu">
           <img className="heroImage" src="Header-Form-Background.png" alt="heroImage"></img>
           <div className="header__menu-right">
-            {/* <div className="header" id="start"> */}
               <HomeLoggNavHeader />
-        
-      
-            {/* </div> */}
-            <span className="header__text">
+              <span className="header__text">
               Oddaj rzeczy których nie chcesz, POTRZEBUJĄCYM!
             </span>
             <img src="Decoration.png" alt="decorationImage"></img>

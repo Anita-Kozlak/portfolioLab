@@ -1,20 +1,15 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import firebase from './firebase';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
 import FourSteps from './FourSteps';
 import HomeThreeColumns from './HomeThreeColumns';
 import WhoWeHelp from './WhoWeHelp';
 import { HashLink as Link } from 'react-router-hash-link';
-import HomeLoggMenuHeader from './HomeLoggMenuHeader';
 import SignOut from './SignOut';
 
-const LoggedHome = (props) => {
-  // const onSignout = async () => {
-  //   await firebase.auth().signOut();
-  //   props.history.push('/loggout');
-  // };
+const LoggedHome = () => {
+  
 
   return (
     <>

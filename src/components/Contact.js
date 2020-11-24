@@ -1,3 +1,4 @@
+/* eslint no-useless-escape: 0 */
 import Input from '@material-ui/core/Input';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
@@ -110,7 +111,7 @@ const Contact = () => {
               <label className="contact__message">Wpisz swoją wiadomość</label>
               <textarea
                 name="message"
-                placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
                 ref={register({
                   required: 'Wiadomosć musi mieć conajmniej 120 znaków!',
 
@@ -119,7 +120,7 @@ const Contact = () => {
                     message: 'Wiadomosć musi mieć conajmniej 120 znaków!',
                   },
                 })}
-                rows={8}
+                rows={6Y}
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

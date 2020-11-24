@@ -11,7 +11,7 @@ const SignOut = (props) => {
 
   return (
             <div className="header__user">
-              {/* <h2>Cześć {firebase.auth().currentUser.email}!</h2> */}
+              <h2>Cześć {firebase.auth().currentUser.email}!</h2>
               <Link to="./givethings">
                 <button>Oddaj rzeczy</button>
               </Link>

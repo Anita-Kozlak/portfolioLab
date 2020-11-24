@@ -1,3 +1,4 @@
+/* eslint no-useless-escape: 0 */
 import React, { useState } from 'react';
 import Input from '@material-ui/core/Input';
 import firebase from '../components/firebase'

@@ -40,8 +40,8 @@ const FormStepTwo = ({props}) => {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            {on && <img src="ArrowUp.png"></img>}
-            {on === false && <img src="ArrowDown.png"></img>}
+            {on && <img src="ArrowUp.png" alt="ArrowUp"></img>}
+            {on === false && <img src="ArrowDown.png" alt="ArrowDown"></img>}
           </div>
           {error && <h8 className="error">{error}</h8>}
         </div>
