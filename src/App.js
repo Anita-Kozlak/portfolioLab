@@ -37,7 +37,6 @@ function App() {
           <Route exact path="/loggout" component={LoggOut} />
           <Route exact path="/givethings" component={GiveThings} />
           <Route exact path="/formsteptwo" component={FormStepTwo} />
-          <Route exact path="/loggedhome" component={LoggedHome} />
 
           <PrivateRoute exact path="/loggedhome" component={LoggedHome} />
         </Switch>
