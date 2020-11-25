@@ -42,7 +42,7 @@ export default function GiveThings() {
   };
   const props = { counter, handleChange, formData, Minus, Plus };
   return (
-    <>
+    <div className="giveThings">
       <HomeLoggMenuHeader />
       {counter > 4 ? null : <Important counter={counter} />}
       <div className="thingsToGive">
@@ -56,7 +56,7 @@ export default function GiveThings() {
         {counter === 6 ? <FormThankYou props={props} /> : null}
       </div>
       <Contact />
-    </>
+    </div>
   );
 }
 

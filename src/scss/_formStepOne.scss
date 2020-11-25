@@ -1,4 +1,5 @@
 .formStepOne {
+    padding: 30px 10px 10px 10px;
    
     .btn {
             @include button;
@@ -10,15 +11,15 @@
 
         }
     &__form {
-        padding-top: 50px;
+        // padding-top: 50px;
          h4 {
             margin-bottom: 90px;
             font-size: 20px;
         }
         p {
             font-size: 30px;
-            margin-bottom: 30px;
             font-weight: 700;
+            margin-bottom: 20px;
 
         }
     }
@@ -27,6 +28,7 @@
     &__checkbox {
         display: flex;
         align-content: center;
+        padding-top: 20px;
         
 
         p {
@@ -35,20 +37,22 @@
             margin-top: 7px;
             // margin-left: 20px;
         }
-    }
+//     }
+}
 }
 input[type=radio] {
     margin-right: 20px;
     height: 30px;
     width: 30px;
+    border-radius: 1px;
     border: 1px solid $grey-dark;
     -webkit-appearance: none;
 
     &:checked {
-        height: 30px;
-        width: 30px;
-        border: 1px solid $grey-dark;
-        -webkit-appearance: none;
+//         height: 30px;
+//         width: 30px;
+//         border: 1px solid $grey-dark;
+//         -webkit-appearance: none;
         background-color: #FAD648;
             
     }

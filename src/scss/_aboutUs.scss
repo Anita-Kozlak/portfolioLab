@@ -2,13 +2,14 @@
     display: flex;
     color: $grey-dark;
     
+    
 
     &__left {
         text-align: center;
         background-color: $bg;
         h1 {
             font-size: 38px;
-            margin-top: 180px;
+            margin-top: 130px;
             margin-bottom: 30px;
         }
         p {
@@ -19,12 +20,15 @@
        .aboutUs__sign {
            float: right;
            margin-right: 120px;
+           margin-top: 70px;
+           margin-bottom: 70px;
        }
     }
     &__right {
         display: none;
         width: 170%;
         overflow: hidden;
+     
      
          @include desktop {
           display: flex;

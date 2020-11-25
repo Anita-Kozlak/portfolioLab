@@ -19,18 +19,22 @@
     }
     &__right {
           
-        max-width: 500px;
+        max-width: 300px;
+        padding: 20px;
         text-align: center;
-
         @include desktop {
         position: absolute;
         right: 5vw;
+        @include desktop {
+            max-width: 450px;
+        }
         }
 
         span {
             color: red;
             margin-top: 10px;
-            display: block;
+            display: block;      
+
         }
         
         
@@ -42,6 +46,7 @@
             border: 1px solid $grey-dark;
             font-size: 15px;
             background-color: transparent;
+            margin-right: 27px;
             @include desktop {
                 float: right;
             }
@@ -72,10 +77,16 @@
                 border-top: none;
                 border-right: none;
                 border-left: none;
-                width: 460px;
+                margin-right: 120px;
+                width: 250px;
                 border-bottom: 1px solid $grey-dark;
                 font-family: $font-base;
                 background-color: transparent;
+                resize: none;
+                @include desktop  {
+                    width: 380px;
+                }
+                
 
                 &::placeholder {
                     font-size: 15px;
@@ -103,6 +114,7 @@
 }
 .contact__footer {
     display: flex;
+    padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
     p {
@@ -111,7 +123,8 @@
     }
     div {
         display: flex;
-        margin-right: 70px;
+        
+        margin-right: 20px;
     }
     img {
         margin-left: 20px;

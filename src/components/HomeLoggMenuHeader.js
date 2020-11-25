@@ -7,12 +7,18 @@ const HomeLoggMenuHeader = () => {
     return (
       <>
         <div className="header__menu">
-          <img className="heroImage" src="Header-Form-Background.png" alt="heroImage"></img>
+          <img
+            className="heroImage"
+            src="Header-Form-Background.png"
+            alt="heroImage"
+          ></img>
           <div className="header__menu-right">
-              <HomeLoggNavHeader />
-              <span className="header__text">
-              Oddaj rzeczy których nie chcesz, POTRZEBUJĄCYM!
-            </span>
+            <HomeLoggNavHeader />
+             <div className="header__menu-container">
+
+            <p className="header__text">
+              Oddaj rzeczy których nie chcesz <br></br> POTRZEBUJĄCYM!
+            </p>
             <img src="Decoration.png" alt="decorationImage"></img>
             <p className="giveThings__text">Wystarczą 4 proste kroki:</p>
             <div className="giveThings__steps">
@@ -34,6 +40,7 @@ const HomeLoggMenuHeader = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </>
     );

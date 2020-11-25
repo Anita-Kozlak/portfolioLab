@@ -3,7 +3,7 @@
     h1 {
         font-size: 38px;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         color: $grey-dark;
 
     }
@@ -13,20 +13,29 @@
    
 
     &__container {
-        max-width: 1000px;
-        margin: auto;
+        // max-width: 1000px;
+        // margin: auto;
         text-align: center;
         color: $grey-dark;
     }
      &__columns {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-around;
         margin-top: 30px;
         padding-top: 70px;
         padding-bottom: 70px;
+        @include tablet {
+            flex-direction: row;
+            justify-content: center;
+        }
        
         .fourStep__column {
             max-width: 180px;
+            margin-bottom: 80px;
+            margin-right: 25px;
+            margin-left: 25px;
             h2 {
                 font-size: 18px;
                 margin-top: 20px;
@@ -51,7 +60,7 @@
         margin-top: 40px;
         margin-bottom: 70px;
         button {
-            padding: 15px 70px;
+            padding: 15px;
             background-color: white;
             color: $grey-dark;
             text-align: center;

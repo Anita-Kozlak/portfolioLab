@@ -1,6 +1,7 @@
 .formStepThree {
+    padding: 30px 10px 10px 10px;
+
     &__form {
-        padding-top: 50px;
         position: relative;
       .btn {
             @include button;
@@ -31,7 +32,7 @@
             width: 40px;
             height: 20px;
             position: absolute;
-            top: 230px;
+            top: 180px;
             left: 150px;
             @include tablet {
             }     
@@ -67,11 +68,10 @@
                 margin-top: 30px;
             }
             .checkbox {
-                cursor: pointer;
-                font-size: 1.2vw;
-                font-weight: 200;
-                margin-top: 40px;
-                margin-right: 20px;
+                margin-top: 20px;
+                padding-bottom: 20px;
+                
+                
             span {
                 position: relative;
                 top: 0;
@@ -82,6 +82,7 @@
                 padding: 10px 30px;
                 text-align: center;;
                 border: 1px solid $grey-dark;
+                margin-right: 20px;
                 }
             span:before, span:after{
                 content:none;
@@ -96,6 +97,5 @@
 }
 
 .error {
-    margin-top: 10px;
     @include error;
 }

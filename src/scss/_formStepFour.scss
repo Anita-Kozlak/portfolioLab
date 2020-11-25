@@ -1,7 +1,7 @@
 .formStepFour {
+    padding: 30px 10px 10px 10px;
+
     &__form {
-        padding-top: 50px;
-      
         .btn {
             @include button;
             margin-top: 100px;
@@ -24,6 +24,8 @@
         } 
         .formStepFour__column {
              margin-right: 50px;
+            padding-bottom: 45px;
+
             }
     
         .formStepFour__option {
@@ -43,12 +45,15 @@
             }
         textarea {
             margin-left: 50px;
-            width: 230px;
+            width: 217px;
             background-color: transparent;
             border: 1px solid $grey-dark;
+            resize: none;
+            height: 100px;
             }
          }
          .formStepFour__options {
+
             @include desktop {
                 display: flex;
             }

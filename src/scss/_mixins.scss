@@ -3,6 +3,7 @@
         font-size: 15px;
         background-color: transparent;
         border: 1px solid $grey-dark;
+        margin-top: 10px;
         
 }
 @mixin error {
@@ -11,7 +12,7 @@
         
 
 }
-$tablet-width: 768px;
+$tablet-width: 758px;
 $desktop-width: 1025px;
 
 @mixin tablet {

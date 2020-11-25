@@ -1,18 +1,15 @@
 .formStepTwo {
+    padding: 30px 10px 10px 10px;
+
     .btn {
-         @include button;
-        margin-right: 20px;
-        margin-top: 250px;
+        @include button;
+            margin-right: 20px;
+            margin-top: 250px;
         
     }
  
     &__container {
-        padding-top: 50px;
-        @include tablet {
-
-        }
-
-    .formStepTwo__options {
+        .formStepTwo__options {
         display: flex;
         align-content: center;
         position: relative;

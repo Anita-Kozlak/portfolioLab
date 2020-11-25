@@ -31,11 +31,7 @@ const Fundations = () => {
                     <p>Lorem, ipsum, dolor, sit, amet</p>
                 </div>
             </div>
-            <div className="pages">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
+           
         </div>
     )
 }

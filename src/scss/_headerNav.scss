@@ -1,14 +1,19 @@
 .header {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+   
     color: $grey;
-    padding-right: 50px;
-  
+    @include desktop {
+        align-items: flex-end;
+        padding-right: 50px;
+
+    }
     
     &__buttons {
-        margin-top: 70px;
+        margin-top: 30px;
         margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-end;
         button {
             padding: 9px;
             font-family: $font-base;
@@ -27,8 +32,15 @@
        }
    
        &__nav {
-        margin-bottom: 100px;
-        // margin-left: 50px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: row;
+            }
+
         button {
             margin-left: 5px;
             font-size: 18px;

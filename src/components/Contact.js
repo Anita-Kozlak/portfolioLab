@@ -137,8 +137,12 @@ const Contact = () => {
         <div className="contact__footer">
           <p>Copyright by Coders Lab</p>
           <div>
-            <img src="Facebook.png" alt="Facebook"></img>
-            <img src="Instagram.png" alt="Instagram"></img>
+            <a href="https://www.facebook.com">
+              <img src="Facebook.png" alt="Facebook" target="_blank"></img>
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src="Instagram.png" alt="Instagram" target="_blank"></img>
+            </a>
           </div>
         </div>
       </>

@@ -138,6 +138,7 @@ export default function FormStepFour({ props }) {
                   onChange={handleChange}
                   value={formData.desc}
                   name="desc"
+                  row={8}
                 />{' '}
               </label>
             </div>

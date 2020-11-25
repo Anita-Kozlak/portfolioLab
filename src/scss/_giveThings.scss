@@ -1,20 +1,26 @@
 .giveThings__steps {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 30px;
+    margin: auto;
+    max-width: 150px;
+    color: $grey-dark;
+    @include desktop {
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+
+        }
     .giveThings__step {
         border: 1px solid $grey-dark;
-        width: 70px;
-        height: 70px;
-        margin-right: 10px;
-        transform: rotate(45deg);
-        @include desktop {
         width: 150px;
         height: 150px;
-     }
+        margin-right: 10px;
+        transform: rotate(45deg);
+        margin-top: 10px;
+        margin-bottom: 40px;
+        @include desktop {
+            width: 9vw;
+            height: 9vw;
+         }
 
         position: relative;
         span {
@@ -22,34 +28,29 @@
             position: absolute;
             top: 30%;
             right: 10%;
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
-             @include desktop {
-                 font-size: 20px;
-             }
+         
             }
              .step__number {
             top: 10%;
-            right: 70%;
+            right: 79%;
             font-size: 25px;
             }
         }
 }
+
 .giveThings__text {
     font-size: 30px;
     color: $grey-dark;
+    margin-bottom: 30px;
 
 }
 .btn {
     @include button;
 }
 .thingsToGive {
-
-     background-image: url('./Background-Form.png');
+    background-image: url('./Background-Form.png');
     background-size: cover;
-    padding-bottom: 50px;
-    @include tablet {
-    padding: 50px 100px;
 
-    }
 }

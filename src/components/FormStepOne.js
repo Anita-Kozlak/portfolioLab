@@ -19,7 +19,7 @@ const FormStepOne = ({props}) => {
 
   return (
     <>
-      <div className="formStepOne">
+      <div className="formStepOne" id="formStepOne">
         <form className="formStepOne__form">
           <h4>Krok {counter}/4</h4>
           <p>Zaznacz co chcesz oddać:</p>

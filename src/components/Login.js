@@ -4,6 +4,7 @@ import Input from '@material-ui/core/Input';
 import firebase from '../components/firebase'
 import { useForm } from "react-hook-form";
 import HomeNavHeader from './HomeNavHeader'
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Login = (props) => {
@@ -75,7 +76,9 @@ const Login = (props) => {
                 <button onClick={onLogin} type="submit">
                   Zaloguj się
                 </button>
-                <button type="submit">Załóż konto</button>
+                <Link to="/register">
+                  <button>Załóż konto</button>
+                </Link>
               </div>
             </form>
           </div>
