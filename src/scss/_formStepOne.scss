@@ -5,13 +5,11 @@
             @include button;
             @include desktop {
                 margin-top: 100px;
-                // margin-left: 100px;
 
             }
 
         }
     &__form {
-        // padding-top: 50px;
          h4 {
             margin-bottom: 90px;
             font-size: 20px;
@@ -35,9 +33,7 @@
             font-size: 20px;
             font-weight: normal;
             margin-top: 7px;
-            // margin-left: 20px;
         }
-//     }
 }
 }
 input[type=radio] {
@@ -49,10 +45,6 @@ input[type=radio] {
     -webkit-appearance: none;
 
     &:checked {
-//         height: 30px;
-//         width: 30px;
-//         border: 1px solid $grey-dark;
-//         -webkit-appearance: none;
         background-color: #FAD648;
             
     }

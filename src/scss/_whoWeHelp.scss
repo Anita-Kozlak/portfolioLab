@@ -13,6 +13,10 @@
     &__buttons {
         margin-top: 80px;
         margin-bottom: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     
         button {
             font-size: 24px;

@@ -22,6 +22,7 @@
             border: none;
             color: $grey;
             font-size: 14px;
+            cursor: pointer;
             
             &:hover {
                 border: 1px solid $yellow;
@@ -49,6 +50,7 @@
             background-color: white;
             padding: 11px;
             color: $grey-dark;
+            cursor: pointer;
 
             
         &:hover {

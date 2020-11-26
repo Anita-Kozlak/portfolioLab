@@ -13,8 +13,7 @@
    
 
     &__container {
-        // max-width: 1000px;
-        // margin: auto;
+ 
         text-align: center;
         color: $grey-dark;
     }
@@ -22,7 +21,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: space-around;
         margin-top: 30px;
         padding-top: 70px;
         padding-bottom: 70px;
@@ -67,6 +65,8 @@
             font-size: 30px;
             text-transform: uppercase;
             border: 1px solid $grey-dark;
+            cursor: pointer;
+
 
         }
         
