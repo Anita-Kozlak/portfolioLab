@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Admin = ({gift}) => {
+const Admin = () => {
   const [giftList, setGiftList] = useState();
 
   useEffect(() => {
@@ -24,19 +24,19 @@ const Admin = ({gift}) => {
 
 
   //wyświetlanie danych w konsoli
-  const showForm = () => {
-    const gifts = firebase.database().ref('gifts');
+  // const showForm = () => {
+  //   const gifts = firebase.database().ref('gifts');
 
-    gifts.on(
-      'value',
-      function (data) {
-        console.log(data.val());
-      },
-      function (error) {
-        console.log('Error: ' + error.code);
-      },
-    );
-  };
+  //   gifts.on(
+  //     'value',
+  //     function (data) {
+  //       console.log(data.val());
+  //     },
+  //     function (error) {
+  //       console.log('Error: ' + error.code);
+  //     },
+  //   );
+  // };
 
  
 

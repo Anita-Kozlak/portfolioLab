@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Fundations from "./Fundations";
 import Local from "./Local";
 import Organizations from "./Organizations";
-import AddIcon from '@material-ui/icons/Add';
-import firebase from '../components/firebase';
+
 
 
 

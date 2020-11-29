@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import PasswordChange from './PasswordChange';
 import firebase from '../components/firebase';
-import Gift from '../components/Gift';
-import Delete from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
 import User from '../components/User'
-import Input from '@material-ui/core/Input';
 
 const Users = () => {
   const [userList, setUserList] = useState([]);
@@ -23,11 +18,11 @@ const Users = () => {
       setUserList(list);
     });
   }, []);
-  const usun = () => {
+  // const usun = () => {
     // const userRef = firebase.database().ref('users').child(userList)
     // userRef.remove();
-    console.log(userList)
-  }
+    // console.log(userList)
+  // }
   return (
     <div className="users">
       <h1>Zarejestrowani użytkownicy:</h1>

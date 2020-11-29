@@ -4,11 +4,6 @@ import Delete from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 export default function User({ user, index}) {
   
-       const [email, setEmail] = useState()
-
-      
-
-  
     const deleteUser = () => {
     const userRef = firebase.database().ref('users').child(user.email)
     userRef.remove();
@@ -34,9 +29,6 @@ export default function User({ user, index}) {
            <EditIcon onClick={editUser} Edycja></EditIcon>
          </h3>
        </div>
-
-       {/* <Input onChange={(e) => setEmail(e.target.value)} value={email}></Input>
-       <Input onChange={(e) => setEmail(e.target.value)} value={email}></Input> */}
      </>
    );
 
