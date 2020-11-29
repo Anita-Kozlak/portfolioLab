@@ -66,6 +66,10 @@
             text-transform: uppercase;
             border: 1px solid $grey-dark;
             cursor: pointer;
+              &:hover {
+          background-color: lightblue;
+          transition: 0.5s;
+        }
 
 
         }

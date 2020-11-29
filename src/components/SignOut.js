@@ -10,14 +10,16 @@ const SignOut = (props) => {
   };
 
   return (
-            <div className="header__user">
-              <h2>Cześć {firebase.auth().currentUser.email}!</h2>
-              <Link to="./givethings">
-                <button>Oddaj rzeczy</button>
-              </Link>
-              <button onClick={onSignout}>Wyloguj</button>
-            </div>
-            
+    <div className="header__user">
+      <h2>Cześć {firebase.auth().currentUser.email}!</h2>
+      <Link to="./givethings">
+        <button>Oddaj rzeczy</button>
+      </Link>
+      <Link to="./admin">
+        <button>Admin</button>
+      </Link>
+      <button onClick={onSignout}>Wyloguj</button>
+    </div>
   );
 };
 export default withRouter(SignOut);

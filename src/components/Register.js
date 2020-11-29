@@ -17,15 +17,15 @@ const Register = (props) => {
 
 
     const onRegister = async () => {
+        const users = firebase.database().ref('users');
 
 
       try {
-          await firebase.auth().createUserWithEmailAndPassword(email,password)
-          await firebase.auth().currentUser.updateProfile({
-              email: email
-          })
-          props.history.push('/loggedhome')
+        await firebase.auth().createUserWithEmailAndPassword(email, password);
+       
+        users.push(email);
 
+        props.history.push('/loggedhome');
       } catch (error) {
           console.log(error)
       }

@@ -19,6 +19,8 @@ import PrivateRoute from './components/PrivateRoute'
 import LoggOut from './components/LoggOut';
 import GiveThings from './components/GiveThings'
 import FormStepTwo from './components/FormStepTwo'
+import Admin from './components/Admin'
+import PasswordChange from './components/PasswordChange';
 
 function App() {
   return (
@@ -37,7 +39,9 @@ function App() {
           <Route exact path="/loggout" component={LoggOut} />
           <Route exact path="/givethings" component={GiveThings} />
           <Route exact path="/formsteptwo" component={FormStepTwo} />
-
+          <Route exact path="/admin" component={Admin} />
+          <Route exact path="/passwordChange" component={PasswordChange} />
+    
           <PrivateRoute exact path="/loggedhome" component={LoggedHome} />
         </Switch>
       </Router>

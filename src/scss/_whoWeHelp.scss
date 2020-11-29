@@ -28,6 +28,9 @@
             height: 100px;
             &:hover {
             border: 1px solid $grey-dark;
+            background-color: lightblue;
+            transition: 1s;
+        
             }
         }
     }

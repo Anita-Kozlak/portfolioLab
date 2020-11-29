@@ -17,6 +17,7 @@ const Login = (props) => {
     const onSubmit = values => console.log(values);
 
     const onLogin = async () => {
+
         try { await 
             firebase.auth().signInWithEmailAndPassword(email,password)
             props.history.push('/loggedhome')
@@ -24,6 +25,8 @@ const Login = (props) => {
              console.log(error)
          }
     }
+
+ 
     return (
       <>
         {' '}

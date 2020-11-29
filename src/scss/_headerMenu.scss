@@ -48,7 +48,12 @@
             margin-left: 20px;
             margin-bottom: 20px;
             cursor: pointer;
+            &:hover {
+background-color: lightblue;
+          transition: 0.5s;
         
+            }
+               
         }
     }
 .header__user {

@@ -1,0 +1,53 @@
+.admin {
+    max-width: 900px;
+        margin: 30px;
+    h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .panel {
+        text-transform: uppercase;;
+    }
+
+}
+.changePassword {
+      h1 {
+                margin-bottom: 30px;
+            }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        label {
+            margin-top: 10px;
+        }
+          
+    }
+}
+.things {
+    display: flex;
+    // margin: 100px;
+    justify-content: space-between;
+    
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+   h2{
+       font-size: 25px;
+       padding-bottom: 20px;
+       margin-top: 30px;
+    //    border-top: 1px solid black;
+   }
+  
+}
+
+   h3 {
+       font-size: 20px;
+       margin-bottom: 10px;
+   } 
+   h4 {
+       margin-top: 10px;
+   }

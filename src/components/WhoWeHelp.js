@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Fundations from "./Fundations";
 import Local from "./Local";
 import Organizations from "./Organizations";
+import AddIcon from '@material-ui/icons/Add';
+import firebase from '../components/firebase';
+
 
 
 const WhoWeHelp = () => {
@@ -50,6 +53,9 @@ const WhoWeHelp = () => {
           <img src="Decoration.png" alt="decorationImage"></img>
           <div className="whoWeHelp__buttons">
             <button onClick={changeFundation}>Fundacjom</button>
+            {/* {firebase.auth().currentUser.email === 'admin@gmail.com' && ( */}
+              {/* <AddIcon>+</AddIcon> */}
+            {/* )}  */}
             <button onClick={changeOrganization}>
               Organizacjom pozarządowym
             </button>

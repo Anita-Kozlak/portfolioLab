@@ -50,14 +50,16 @@
         button {
             font-size: 16px;
             background-color: white;
-            padding: 16px;
             border: none;
             cursor: pointer;
-            &:hover {
-                border: 1px solid $grey-dark;
-                padding: 15px;
+            padding: 11px;
+             &:hover {
+            border: 1px solid $grey-dark;
+            padding: 10px;
+            background-color: $bg;
+            transition: 0.3;
 
-            }
+        }
 
         }
     }
