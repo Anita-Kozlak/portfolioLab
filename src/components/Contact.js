@@ -2,7 +2,10 @@
 import Input from '@material-ui/core/Input';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-
+import Decoration from '../components/Decoration';
+import Facebook from '../assets/Facebook.png';
+import Instagram from '../assets/Instagram.png';
+import BackgroundImage from '../assets/BackgroundImage.png'
 
 const Contact = () => {
 
@@ -54,11 +57,11 @@ const Contact = () => {
       <>
         <div className="contact" id="contact">
           <div className="contact__left">
-            <img src="BackgroundImage.png" alt="decorationImage"></img>
+            <img src={BackgroundImage} alt="decorationImage"></img>
           </div>
           <div className="contact__right">
             <h1>Skontaktuj się z nami</h1>
-            <img src="Decoration.png" alt="decorationImage"></img>
+            <Decoration />
             <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
               {cars.length > 0 && (
                 <p>Wiadomość została wysłana! Wkrótce się skontaktujemy.</p>
@@ -138,10 +141,10 @@ const Contact = () => {
           <p>Copyright by Coders Lab</p>
           <div>
             <a href="https://www.facebook.com">
-              <img src="Facebook.png" alt="Facebook" target="_blank"></img>
+              <img src={Facebook} alt="Facebook" target="_blank"></img>
             </a>
             <a href="https://www.instagram.com/">
-              <img src="Instagram.png" alt="Instagram" target="_blank"></img>
+              <img src={Instagram} alt="Instagram" target="_blank"></img>
             </a>
           </div>
         </div>

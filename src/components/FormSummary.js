@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from '../components/firebase';
+import Decoration from '../components/Decoration';
 
 export default function FormSummary({ props }) {
   const { formData, Minus, Plus } = props;
@@ -22,7 +23,7 @@ export default function FormSummary({ props }) {
           <h1>Podsumowanie Twojej darowizny</h1>
           <h3>Oddajesz: </h3>
           <div className="summary">
-            <img src="Icon.png" alt="" /> {formData.bags} worki, {formData.gift}
+            <Decoration /> {formData.bags} worki, {formData.gift}
           </div>
           <div className="summary">
             <img src="Icon4.png" alt="" />

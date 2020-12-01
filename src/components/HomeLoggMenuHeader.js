@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeLoggNavHeader from './HomeLoggNavHeader';
-
+import Decoration from '../components/Decoration';
+import FormBackground from '../assets/Header-Form-Background.png'
 
 const HomeLoggMenuHeader = () => {
 
@@ -9,7 +10,7 @@ const HomeLoggMenuHeader = () => {
         <div className="header__menu">
           <img
             className="heroImage"
-            src="Header-Form-Background.png"
+            src={FormBackground}
             alt="heroImage"
           ></img>
           <div className="header__menu-right">
@@ -19,7 +20,7 @@ const HomeLoggMenuHeader = () => {
             <p className="header__text">
               Oddaj rzeczy których nie chcesz <br></br> POTRZEBUJĄCYM!
             </p>
-            <img src="Decoration.png" alt="decorationImage"></img>
+            <Decoration />
             <p className="giveThings__text">Wystarczą 4 proste kroki:</p>
             <div className="giveThings__steps">
               <div className="giveThings__step">

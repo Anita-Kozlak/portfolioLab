@@ -1,5 +1,4 @@
 import React from "react";
-
 const HomeThreeColumns = () => {
     return (
             <div className="threeColumns">

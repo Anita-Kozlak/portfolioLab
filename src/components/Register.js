@@ -6,6 +6,7 @@ import { sameAs } from '../helpers/validators';
 import HomeNavHeader from './HomeNavHeader';
 import firebase from '../components/firebase';
 import { HashLink as Link } from 'react-router-hash-link';
+import Decoration from '../components/Decoration';
 
 
 const Register = (props) => {
@@ -34,7 +35,7 @@ const Register = (props) => {
         <HomeNavHeader />
         <div className="form">
           <h1>Załóż konto</h1>
-          <img src="Decoration.png" alt="DecorationImage"></img>
+          <Decoration />
           <form className="form__register" onSubmit={handleSubmit(onSubmit)}>
             <div className="form__registerGrey">
               <label>Email</label>

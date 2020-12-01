@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import ArrowUp from '../assets/ArrowUp.png';
+import ArrowDown from '../assets/ArrowDown.png';
 const FormStepTwo = ({props}) => {
 
   const [on, setOn] = useState(true)
@@ -40,8 +41,8 @@ const FormStepTwo = ({props}) => {
               <option value="4">4</option>
               <option value="5">5</option>
             </select>
-            {on && <img src="ArrowUp.png" alt="ArrowUp"></img>}
-            {on === false && <img src="ArrowDown.png" alt="ArrowDown"></img>}
+            {on && <img src={ArrowUp} alt="ArrowUp"></img>}
+            {on === false && <img src={ArrowDown} alt="ArrowDown"></img>}
           </div>
           {error && <h8 className="error">{error}</h8>}
         </div>

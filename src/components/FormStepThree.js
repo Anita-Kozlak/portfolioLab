@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ArrowUp from '../assets/ArrowUp.png';
+import ArrowDown from '../assets/ArrowDown.png';
 
 export default function FormStepThree({ props, handleCheckbox }) {
   const [on, setOn] = useState(false);
@@ -71,8 +73,8 @@ export default function FormStepThree({ props, handleCheckbox }) {
               <option value="Wrocław">Wrocław</option>
               <option value="Katowice">Katowice</option>
             </select>
-            {on && <img src="ArrowUp.png" alt="arrowUp"></img>}
-            {on === false && <img src="ArrowDown.png" alt="arrowDown"></img>}
+            {on && <img src={ArrowUp} alt="arrowUp"></img>}
+            {on === false && <img src={ArrowDown} alt="arrowDown"></img>}
           </label>
           {errors.localization && (
             <p className="error">{errors.localization}</p>

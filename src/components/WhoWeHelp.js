@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Fundations from "./Fundations";
 import Local from "./Local";
 import Organizations from "./Organizations";
+import Decoration from '../components/Decoration';
 
 
 
@@ -49,8 +50,8 @@ const WhoWeHelp = () => {
       <>
         <div className="whoWeHelp" id="whowehelp">
           <h1>Komu pomagamy</h1>
-          <img src="Decoration.png" alt="decorationImage"></img>
-          <div className="whoWeHelp__buttons">
+          <Decoration />
+           <div className="whoWeHelp__buttons">
             <button onClick={changeFundation}>Fundacjom</button>
             <button onClick={changeOrganization}>
               Organizacjom pozarządowym

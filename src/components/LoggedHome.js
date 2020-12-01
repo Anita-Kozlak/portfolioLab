@@ -7,6 +7,9 @@ import HomeThreeColumns from './HomeThreeColumns';
 import WhoWeHelp from './WhoWeHelp';
 import { HashLink as Link } from 'react-router-hash-link';
 import SignOut from './SignOut';
+import HeroImage from '../assets/HeroImage.png';
+import Decoration from './Decoration';
+
 
 const LoggedHome = () => {
   
@@ -14,7 +17,7 @@ const LoggedHome = () => {
   return (
     <>
       <div className="header__menu">
-        <img className="heroImage" src="HeroImage.png" alt="heroImage"></img>
+        <img className="heroImage" src={HeroImage} alt="heroImage"></img>
         <div className="header__menu-right">
           <div className="header" id="start">
             <SignOut />
@@ -38,7 +41,7 @@ const LoggedHome = () => {
             <p className="header__text">
               Zacznij pomagać! <br></br> Oddaj niechciane rzeczy w zaufane ręce
             </p>
-            <img src="Decoration.png" alt="decorationImage"></img>
+            <Decoration />
             <div className="menu__buttons">
               <Link to="/givethings">
                 <button>Oddaj rzeczy</button>

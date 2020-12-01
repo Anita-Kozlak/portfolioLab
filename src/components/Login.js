@@ -5,6 +5,7 @@ import firebase from '../components/firebase'
 import { useForm } from "react-hook-form";
 import HomeNavHeader from './HomeNavHeader'
 import { HashLink as Link } from 'react-router-hash-link';
+import Decoration from '../components/Decoration';
 
 
 const Login = (props) => {
@@ -35,7 +36,7 @@ const Login = (props) => {
 
           <div className="form">
             <h1>Zaloguj się</h1>
-            <img src="Decoration.png" alt="DecorationImage"></img>
+            <Decoration />
             <form className="form__login" onSubmit={handleSubmit(onSubmit)}>
               <div className="form__loginGrey">
                 <label>Email</label>

@@ -1,6 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
 import React, {useContext} from 'react'
 import { AuthContext } from './auth'
+import Decoration from '../components/Decoration'
+import Icon1 from '../assets/Icon.png';
+import Icon2 from '../assets/Icon2.png';
+import Icon3 from '../assets/Icon3.png';
+import Icon4 from '../assets/Icon4.png';
+
 
   
 
@@ -10,30 +16,36 @@ const FourSteps = () => {
       <>
         <div className="fourSteps__heading" id="foursteps">
           <h1>Wystarczą 4 proste kroki</h1>
-          <img src="Decoration.png" alt="decorationImage"></img>
+          <Decoration />
         </div>
         <div className="fourSteps">
           <div className="fourSteps__container">
             <div className="fourSteps__columns">
               <div className="fourStep__column">
-                <img src="Icon.png" alt="Icon"></img>
+                <img src={Icon1} alt="Icon"></img>
                 <h2>Wybierz rzeczy</h2>
                 <h3>ubrania, zabawki, sprzęt i inne</h3>
               </div>
               <div className="fourStep__column">
-                <img src="Icon2.png" alt="Icon"></img>
+                <img src={Icon2} alt="Icon"></img>
                 <h2>Spakuj je</h2>
-                <h3>wykorzystaj z worków na śmieci</h3>
+                <h3>
+                  wykorzystaj z <br></br>worków na śmieci
+                </h3>
               </div>
               <div className="fourStep__column">
-                <img src="Icon3.png" alt="Icon"></img>
+                <img src={Icon3} alt="Icon"></img>
                 <h2>Zdecyduj komu chcesz pomóc</h2>
-                <h3>wybierz zaufane miejsce</h3>
+                <h3>
+                  wybierz zaufane <br></br> miejsce
+                </h3>
               </div>
               <div className="fourStep__column">
-                <img src="Icon4.png" alt="Icon"></img>
+                <img src={Icon4} alt="Icon"></img>
                 <h2>Zamów kuriera</h2>
-                <h3>kurier przyjedzie w dogodnym terminie</h3>
+                <h3>
+                  kurier przyjedzie <br></br> w dogodnym terminie
+                </h3>
               </div>
             </div>
           </div>
