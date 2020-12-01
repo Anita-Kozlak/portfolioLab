@@ -3,12 +3,14 @@ import 'firebase/auth'
 import 'firebase/database'
 
 const config = {
-     apiKey: process.env.REACT_APP_API_KEY,
-     authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-     databaseURL: process.env.REACT_APP_DATABASE_URL,
-     projectId: process.env.REACT_APP_PROJECT_ID,
-     storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-     messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    apiKey: "AIzaSyAvMAvrVlEZvcdDyoqafpn8iITnh-a51I0",
+    authDomain: "portfoliolab-c9282.firebaseapp.com",
+    databaseURL: "https://portfoliolab-c9282.firebaseio.com",
+    projectId: "portfoliolab-c9282",
+    storageBucket: "portfoliolab-c9282.appspot.com",
+    messagingSenderId: "829780221566",
+    appId: "1:829780221566:web:e6e3be2394f5ea6e74822f",
+    measurementId: "G-5N5E2TG4SL"
     };
 
   const firebase = app.initializeApp(config)
