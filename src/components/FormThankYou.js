@@ -1,4 +1,7 @@
 import React from 'react';
+import Decoration from '../components/Decoration';
+
+
 const FormThankYou = () => {
   return (
     <div className="formThankYou">
@@ -7,7 +10,7 @@ const FormThankYou = () => {
           Dziękujemy za przesłanie formularza Na maila prześlemy wszelkie
           informacje o odbiorze.
         </p>
-        <img src="Decoration.png" alt="decorationImage"></img>
+        <Decoration />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import HomeLoggNavHeader from "./HomeNavHeader";
 import { Link  } from 'react-router-dom'
+import Decoration from '../components/Decoration';
 
 
 const LoggOut = () => {
@@ -9,7 +10,7 @@ const LoggOut = () => {
             <HomeLoggNavHeader />
             <div className="loggOut__container">
                 <h1>Wylogowanie nastąpiło pomyślnie!</h1>
-                <img src="Decoration.png" alt="decorationImage"></img>
+                <Decoration />
                 <Link to="/"><button>Strona główna</button></Link> 
             </div>
         </div>
