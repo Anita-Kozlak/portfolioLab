@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import firebase from '../components/firebase';
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
