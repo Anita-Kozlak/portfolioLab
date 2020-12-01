@@ -140,10 +140,14 @@ const Contact = () => {
         <div className="contact__footer">
           <p>Copyright by Coders Lab</p>
           <div>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <img src={Facebook} alt="Facebook"></img>
             </a>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={Instagram} alt="Instagram"></img>
             </a>
           </div>
