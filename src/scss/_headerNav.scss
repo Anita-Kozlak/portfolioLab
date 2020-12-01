@@ -15,10 +15,10 @@
         display: flex;
         justify-content: flex-end;
         button {
-            padding: 9px;
+            padding: 5px;
             font-family: $font-base;
             background-color: white;
-            margin-left: 10px;
+            margin-left: 7px;
             border: none;
             color: $grey;
             font-size: 14px;
@@ -27,7 +27,7 @@
             
             &:hover {
                 border: 1px solid $yellow;
-                padding: 8px;
+                padding: 4px;
 
             }
          }
@@ -59,7 +59,7 @@
             border: 1px solid $grey-dark;
             padding: 10px;
             background-color: $bg;
+            }
         }
-   }
-}
+    }
 }

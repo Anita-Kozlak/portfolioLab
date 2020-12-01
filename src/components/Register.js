@@ -22,9 +22,7 @@ const Register = (props) => {
 
       try {
         await firebase.auth().createUserWithEmailAndPassword(email, password);
-       
         users.push(email);
-
         props.history.push('/loggedhome');
       } catch (error) {
           console.log(error)

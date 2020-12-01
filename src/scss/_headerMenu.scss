@@ -21,8 +21,8 @@
     }
     img {
         margin-bottom: 30px;
+        }
     }
-}
 }
     .heroImage {
         display: none;
@@ -49,15 +49,14 @@
             margin-bottom: 20px;
             cursor: pointer;
             &:hover {
-background-color: lightblue;
-          transition: 0.5s;
+                background-color: lightblue;
+                transition: 0.5s;
         
             }
-               
         }
     }
 .header__user {
     display: flex;
-    justify-content: center;
+    justify-content: center
   
 }

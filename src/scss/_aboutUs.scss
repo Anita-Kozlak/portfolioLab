@@ -2,8 +2,6 @@
     display: flex;
     color: $grey-dark;
     
-    
-
     &__left {
         text-align: center;
         background-color: $bg;
@@ -32,7 +30,7 @@
      
          @include desktop {
           display: flex;
-      }
+        }
     }
        
 }

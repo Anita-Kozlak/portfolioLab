@@ -52,9 +52,6 @@ const WhoWeHelp = () => {
           <img src="Decoration.png" alt="decorationImage"></img>
           <div className="whoWeHelp__buttons">
             <button onClick={changeFundation}>Fundacjom</button>
-            {/* {firebase.auth().currentUser.email === 'admin@gmail.com' && ( */}
-              {/* <AddIcon>+</AddIcon> */}
-            {/* )}  */}
             <button onClick={changeOrganization}>
               Organizacjom pozarządowym
             </button>
@@ -62,8 +59,8 @@ const WhoWeHelp = () => {
           </div>
         </div>
         {fundation && <Fundations />}
-        {organization && <Organizations />}
-        {local && <Local />}
+        {organization && <Organizations />} 
+        {local && <Local />} 
         <div className="pages">
           <span style={{ border: border1 }} onClick={changeFundation}>
             1

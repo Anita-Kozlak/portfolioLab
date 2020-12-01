@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from '../components/firebase';
 
-export default function FoemSummary({ props }) {
+export default function FormSummary({ props }) {
   const { formData, Minus, Plus } = props;
 
 

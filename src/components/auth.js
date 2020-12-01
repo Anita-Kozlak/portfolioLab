@@ -5,10 +5,10 @@ import firebase from '../components/firebase'
 export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
-    const [currentUser, setCurrentUser] = useState(null)
+    const [currentUser, setCurrentUser] = useState('')
 
     useEffect(() => {
-        firebase.auth().signOut();
+        // firebase.auth().signOut();
 
         firebase.auth().onAuthStateChanged(setCurrentUser)
     }, [])

@@ -4,41 +4,37 @@ import Button from '@material-ui/core/Button';
 import { useState } from 'react';
 import firebase from './firebase';
 
-const PasswordChange = (props) => {
-  const [passwordOne, setPasswordOne] = useState('');
-  const [passwordTwo, setPasswordTwo] = useState('');
-
-  const isInvalid = passwordOne !== passwordTwo || passwordOne === '';
+const PasswordChange = () => {
+  const [email, setEmail] = useState('');
 
  
   const onChange = async () => {
-    try {
-      await firebase.auth().currentUser.updatePassword(passwordOne)
-      props.history.push('/loggedhome')
+    var auth = firebase.auth();
+    var emailAddress = email;
 
-    } catch (error) {
-      console.log(error);
-    }
+    auth
+      .sendPasswordResetEmail(emailAddress)
+      .then(function () {
+        console.log('hasło wysłane')
+      })
+      .catch(function (error) {
+        console.log('błąd')
+      });
   };
   return (
     <div className="changePassword">
-      <h1>Zmień hasło:</h1>
+      <h1>
+        Zmień hasło użytkownika: <br></br>
+        <h4>(wpisz email użytkownika, a my wyślemy do niego maila)</h4>
+      </h1>
       <form>
-        <label>Zmień hasło</label>
+        <label>Email użytkownika:</label>
         <Input
           name="text"
-          value={passwordOne}
-          onChange={(e) => setPasswordOne(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Powtórz nowe hasło</label>
-        <Input
-          name="text"
-          value={passwordTwo}
-          onChange={(e) => setPasswordTwo(e.target.value)}
-        />
-        <Button onClick={onChange} disabled={isInvalid} type="submit">
-          Zresetuj hasło
-        </Button>
+        <Button onClick={onChange}>wyślij</Button>
       </form>
     </div>
   );
